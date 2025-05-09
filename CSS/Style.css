@@ -1,0 +1,15 @@
+header {
+    font-size: 20px;
+    background-color: azure;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+table, tr, th {
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+}
+h1 {
+    text-align: center;
+
+}
