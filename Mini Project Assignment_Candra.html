@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Candra</title>
+    <title>Resto Candra</title>
     <link rel="stylesheet" type="text/css" href="CSS\Style.css"/>
 </head>
 <body>
@@ -16,46 +16,99 @@
     <article> = konten independent
     <footer> = kontent penutup-->
     <!-- Main header -->
+
+    <!-- <div class="form-container">
+        <form id="registrationForm" novalidate>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Email" required />
+            </div>
+
+        </form>
+    </div> -->
+    <header class="main-header">
+        <div class="main-logo"></div>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="#About_Us">About Us</a></li>
+                <li><a href="#Our Menu">Our Menu</a></li>
+                <li><a href="#Call Us">Order Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Hi <span class="highlight">Candra</span>, welcome to our website</h2>
+    <header>
+        <div class="banner-container">
+            <div class="banner-img banner-img-1"></div>
+            <div class="banner-img banner-img-2"></div>
+         </div>
+    </header>
     
-    <nav class="navbar">
-        <aside><img class="main-logo" src="Assets\LOGO AURA 2 (1).png" alt="logo RM" height="50px" width="50px"></aside>
-        <ul>
-            <li><a href="#About Us">About Us</a></li>
-            <li><a href="#Our Menu">Our Menu</a></li>
-            <li><a href="#RSVP">Order Us</a></li>
-        </ul>
-    </nav>
     <main>
         <!-- About us content -->
-         <section id="About Us">
-            <h1>ABOUT US</h1>
-            <div class="h-about">
-                <img src="Assets\Fried Chicken 1.png" alt="Menu Promo" height="300px" width="auto">
+         <section id="About_Us">
+            <h1>ABOUT US</h1> 
+            
+        <!-- ini perbaikan -->
+         <div class="isi-form">
+                <p> <b>Aura Fried Chiecken</b> adalah restoran cepat saji yang berdiri di amuntai sejak tahun 2020. Berlokasikan di jln. tembus TVRI, menghadirkan banyak makanan untuk mengisi perut anda. Walaupun dinamakan fried chicken aja, AFC menyediakan menu yang beragam, agar anda tidak bosan dengan makanan kami, mulai dari fried chicken, kalasan dan bahkan dessert seperti ice cream. Bingung untuk makan apa, maka AFC merupakan tempat yang cocok untuk anda</p>
+
+                <form>
+                    <!-- Inputan Nama, tanggal dan banyak orang -->
+                    <div>
+                        <label for="name-input">Name</label>
+                        <input type="text" id="name-input" placeholder="Enter your name" required>
+                    </div>
+
+                     <div>
+                        <label for="date-input">Tanggal</label>
+                        <input type="text" id="date-input" placeholder="Resevation date" required>
+                    </div>
+
+                     <div>
+                        <label for="people-input">banyak orang</label>
+                        <input type="text" id="people-input" placeholder="total people" required>
+                    </div>
+
+                    <div>
+                        <button onclick="validasiForm()" type="button">Submit</button>
+                    </div>
+                </form>
             </div>
-            <p> <b>Aura Fried Chiecken</b> adalah restoran cepat saji yang berdiri di amuntai sejak tahun 2020. Berlokasikan di jln. tembus TVRI, menghadirkan banyak makanan untuk mengisi perut anda. Walaupun dinamakan fried chicken aja, AFC menyediakan menu yang beragam, agar anda tidak bosan dengan makanan kami, mulai dari fried chicken, kalasan dan bahkan dessert seperti ice cream. Bingung untuk makan apa, maka AFC merupakan tempat yang cocok untuk anda</p>
          </section>
         <!-- our Package content -->
-         <section>
+         <section id="Our Menu">
+            <h1>Our Menu</h1>
             <header>
                 <div class="col">Ayam Kalasan</div>
                 <div class="col">Sayur Asem Jakarta</div>
-                <div class="col">Mila Terbang</div>
+                <div class="col">Nila Terbang</div>
             </header>
                 <div class="row">
-                    <div class="col"><img src="Assets\LOGO AURA 2 (1).png" alt="logo RM" height="50px" width="50px"></div>
-                    <div class="col">2</div>
-                    <div class="col">3</div>
+                    <div class="col"><img src="Assets\ayam-goreng-kalasan-foto-resep-utama-removebg-preview (1).png" alt="ayam kalasan" height="100px" width="auto"></div>
+                    <div class="col"><img src="Assets\maxresdefault-removebg-preview (1).png" alt="sayur asem" height="100px" width="auto"></div>
+                    <div class="col"><img src="Assets\ikan-nila-terbang-foto-resep-utama-removebg-preview (1).png" alt="nila terbang" height="100px" width="auto"></div>
                 </div>
         </section>
 
          <!-- call us -->
-          <section></section>
+          <section id="Call Us">
+            <h1>Call Us</h1>
+            <header>
+                <div class="col"><img src="Assets\Icon WA.png" alt="wa" height="50px" width="50px"></div>
+                <div class="col"><img src="Assets\Icon IG.jpeg" alt="IG" height="50px" width="50px"></div>
+            </header>
+                <div class="row">
+                    <div class="col">08xx-xxxx-xxxx</div>
+                    <div class="col">@AuraFriedChicken</div>
+                </div>
+          </section>
     </main>
-    
-    <h2>100% SERU DAN AMAN</h2>
 
     <footer>
-        
+        <span>
+            &copy; 2025 Resto Candra. All rights reserved.
+        </span>
     </footer>
+    <script src="JS\Script.js"></script>
 </body>
 </html>
